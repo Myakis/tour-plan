@@ -12,15 +12,15 @@ body {
   margin: auto;
 }
 
-.header {
+.navbar {
   background: #fff;
 }
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
 
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
