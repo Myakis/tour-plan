@@ -27,6 +27,13 @@ body {
   padding: 40px 0;
 }
 
+.logo {
+  width: 177px;
+}
+.logo__image {
+  max-width: 100%;
+}
+
 .search {
   display: flex;
   position: relative;
@@ -70,4 +77,60 @@ body {
   width: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.navbar-bottom {
+  background: #0A223D;
+}
+
+.navbar-menu {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 31px 0;
+  justify-content: space-between;
+}
+.navbar-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (max-width: 1200px) {
+  .conteiner {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .conteiner {
+    max-width: 700px;
+  }
+
+  .navbar-top {
+    padding: 30px auto;
+  }
+  .navbar__search {
+    margin-left: auto;
+    max-width: 340px;
+  }
+  .navbar-menu {
+    padding: 22px auto;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .conteiner {
+    max-width: 576px;
+  }
+
+  .navbar-meny__link {
+    font-size: 12px;
+    line-height: 15;
+  }
 }/*# sourceMappingURL=style.css.map */

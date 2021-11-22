@@ -14,8 +14,9 @@
   padding: 40px 0;
 }
 .logo {
-
+  width: 177px;
 		&__image {
+      max-width: 100%;
 		}
 }
 .search {
@@ -70,12 +71,26 @@
      
     }
 }
+.navbar-bottom{
+  background:$dark;
+}
+.navbar-menu {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 31px 0;
+  justify-content: space-between;
 
-.header-menu {
 
 		&__item {
 		}
 
 		&__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $light;
+      font-size: 14px;
+      line-height: 18px;
 		}
 }
