@@ -1,3 +1,13 @@
 *{
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Mulish', sans-serif;
+  color: $text-color;
+}
+
+.conteiner{
+  max-width: 1110px;
+  margin: auto;
+}
