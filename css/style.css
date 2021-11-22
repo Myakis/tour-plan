@@ -23,15 +23,15 @@ img {
   margin-right: auto;
   margin-left: 108px;
 }
-.navbar__menu-button {
-  display: none;
-}
 
 .navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
+}
+.navbar-top__menu-button {
+  display: none;
 }
 
 .logo {
@@ -121,7 +121,6 @@ img {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding: 22px auto;
@@ -129,6 +128,10 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .search__input {
+    max-width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -148,6 +151,7 @@ img {
     display: flex;
     align-items: center;
     height: 11px;
+    padding: 0;
     cursor: pointer;
     border: none;
     background: #fff;
