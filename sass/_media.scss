@@ -8,6 +8,9 @@
   .conteiner{
     max-width: 700px;
   }
+  .logo{
+    width: 132px;
+  }
   .navbar{
 
     &-top{
@@ -32,13 +35,37 @@
 @media (max-width:768px){
   .conteiner{
     max-width: 576px;
+    width: 92%;
   }
   .navbar{
-    &-meny{
-      &__link{
-        font-size: 12px;
-        line-height: 15;
+    &__search,&__user,&-menu{
+      display: none;
+    }
+    &__menu-button{
+      display: flex;
+    }
+  }
+  .menu{
+    &-button{
+      display: flex;
+      align-items: center;
+      height: 11px;
+      cursor: pointer;
+      border:none;background:#fff;
+      width: 16px;
+      justify-content: space-between;
+      flex-direction: column;
+      &__line{
+        width: 16px;
+        height: 1px;
+        background:$text-color;
       }
     }
   }
+}
+
+@media (maw-width:576px) {
+  .logo{
+    width: 99px;
+  } 
 }
