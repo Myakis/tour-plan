@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/normalize.css" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
@@ -79,5 +83,70 @@
         </ul>
       </div>
     </header>
+    <nav class="breadcrumb conteiner">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item">
+          <a href="$" class="breadcrumb-list__link">Home</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          <a href="$" class="breadcrumb-list__link">Flash Offers</a>
+        </li>
+        <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+      </ul>
+    </nav>
+    <section class="hotel conteiner">
+      <div class="hotel-info">
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+            <div class="stars">
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+            </div>
+            <h1 class="hotel-name">GRAND HILTON HOTEL</h1>
+            <span class="offer hotel-info__offer">Flash Offer</span>
+          </div>
+
+          <p class="hotel-description">
+            Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+            Free
+          </p>
+        </div>
+        <div class="rating hotel-info__rating">
+          <span class="rating__text">User Rattings</span>
+          <span class="rating__counter">4.5/5</span>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide.jpg" alt="" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+          <button class="slider-button slider-button--next"></button>
+          <button class="slider-button slider-button--prev"></button>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

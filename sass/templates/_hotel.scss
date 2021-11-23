@@ -1,0 +1,116 @@
+.hotel {
+  padding: 23px 0 70px 0;
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__offer {
+      margin-top: 4px;
+      margin-left: 14px;
+      order: 0;
+    }
+    &__rating {
+    }
+
+    &__text {
+    }
+
+    &__rating {
+    }
+  }
+  &-description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &-name {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+}
+
+.stars {
+  flex-basis: 100%;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  padding: 4px 9px;
+  background: $primary;
+  border-radius: 3px;
+  color: $light;
+}
+
+.rating {
+  text-align: center;
+  max-width: 65px;
+  min-height: 45px;
+  color: $light;
+  background: $primary;
+  border-radius: 4px;
+
+  &__text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  &__counter {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  position: relative;
+  margin: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+    z-index: 2;
+  }
+}
+
+.slider {
+  position: relative;
+
+  &-button {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+
+    &--prev {
+      left: 18px;
+      height: 16px;
+      width: 16px;
+      background: url(/img/arrow-l.svg) no-repeat;
+      z-index: 6;
+    }
+    &--next {
+      right: 18px;
+      height: 16px;
+      width: 16px;
+      background: url(/img/arrow.svg) no-repeat;
+      z-index: 6;
+    }
+  }
+}
