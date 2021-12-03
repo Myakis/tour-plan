@@ -5,6 +5,10 @@
   .slider {
     width: 600px;
   }
+  .card {
+    width: 220px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -54,6 +58,15 @@
   }
   .map {
     margin-left: 5px;
+  }
+  .activites {
+    &-wrapper {
+      flex-wrap: wrap;
+    }
+  }
+  .card {
+    width: 48%;
+    margin-bottom: 15px;
   }
 }
 
@@ -135,8 +148,11 @@
   }
 }
 
-@media (maw-width: 576px) {
+@media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .card {
+    width: 100%;
   }
 }
