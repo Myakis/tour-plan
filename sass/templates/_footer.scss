@@ -1,0 +1,168 @@
+.footer {
+  padding: 91px 0 63px 0;
+  background: $dark;
+  &__logo {
+    align-self: center;
+  }
+
+  &__block {
+  }
+
+  &__title {
+    color: $light;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 23px;
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $footer-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80px;
+    margin-left: 50px;
+  }
+
+  &__contact {
+    grid-row: 3/4;
+    grid-column: span 2;
+  }
+
+  &__text {
+    color: $footer-color;
+    margin-top: 34px;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    padding-left: 40px;
+  }
+
+  &__info-1 {
+    position: relative;
+    :before {
+      content: "";
+      width: 100%;
+      top: 6px;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      background: url(/img/point-icon.svg) no-repeat;
+    }
+  }
+
+  &__info-2 {
+    position: relative;
+    :before {
+      content: "";
+      width: 100%;
+      top: 6px;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      background: url(/img/phone-icon.svg) no-repeat;
+    }
+  }
+
+  &__info-3 {
+    position: relative;
+    :before {
+      content: "";
+      width: 100%;
+      top: 6px;
+      left: 0;
+      height: 100%;
+      position: absolute;
+      background: url(/img/mail-icon.svg) no-repeat;
+    }
+  }
+
+  &__form {
+    grid-row: 3/4;
+    grid-column: span 2;
+  }
+}
+.footer-bottom {
+  margin-top: 102px;
+  display: flex;
+  justify-content: space-between;
+  &__link {
+    margin: auto;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, min-content);
+}
+
+.categories {
+}
+.additional {
+}
+.social-network {
+  grid-column: 3/5;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.legal {
+  justify-self: end;
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+  &__input {
+    padding: 0 15px;
+    flex-basis: 40%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &__area {
+    flex: 0 0 100%;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    resize: none;
+    height: 123px;
+  }
+
+  &__button {
+    color: $light;
+    background: $primary;
+    padding: 18px 60px;
+    border-radius: 4px;
+  }
+
+  &__text {
+    color: $footer-color;
+  }
+}
