@@ -1,4 +1,4 @@
 # tour-plan
-my education 
+my project
 
 Андрей Мякишев
