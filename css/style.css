@@ -104,6 +104,9 @@ img {
   padding: 31px 0;
   justify-content: space-between;
 }
+.navbar-menu__item--mobille-visible {
+  display: none;
+}
 .navbar-menu__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -114,6 +117,14 @@ img {
 }
 .navbar-menu__link:hover {
   color: #e47915;
+}
+
+.navbar__search-mobille--visible {
+  display: none;
+}
+
+.navbar__user-mobille--visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -731,11 +742,54 @@ img {
     max-width: 100%;
   }
 
-  .navbar__search, .navbar__user, .navbar-menu {
+  .navbar__search-mobille--hiden, .navbar__user-mobille--hiden {
     display: none;
+  }
+  .navbar__search-mobille--visible, .navbar__user-mobille--visible {
+    display: block;
+    display: flex;
+  }
+  .navbar__search-mobille--visible span, .navbar__user-mobille--visible span {
+    color: #fff;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    top: 78px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-bottom-visible {
+    display: flex;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    align-items: left;
+  }
+  .navbar-menu__item {
+    margin-bottom: 25px;
+  }
+  .navbar-menu__item--mobille-visible {
+    display: block;
   }
   .navbar__menu-button {
     display: flex;
+  }
+  .navbar--mobille_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .breadcrumb--mobille {
+    margin-top: 100px;
   }
 
   .menu-button {
@@ -788,6 +842,14 @@ img {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+
+  .activites {
+    padding: 10px;
+  }
+
+  .hotel {
+    padding: 30px 0;
   }
 
   .card {

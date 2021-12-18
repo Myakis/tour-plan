@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobille_fixed">
       <div class="conteiner">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -36,7 +36,10 @@
             ><span class="menu-button__line"></span>
           </button>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search-mobille--hiden"
+          >
             <input
               type="text"
               class="search__input"
@@ -47,7 +50,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user-mobille--hiden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -59,6 +62,31 @@
       </div>
       <div class="navbar-bottom">
         <ul class="navbar-menu conteiner">
+          <li class="navbar-menu__item navbar-menu__item--mobille-visible">
+            <a href="#" class="user navbar__user navbar__user-mobille--visible">
+              <img
+                src="img/user-avatar.jpg"
+                alt="avatar: Nathan"
+                class="avatar user-avatar"
+              />
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobille-visible">
+            <form
+              action="#"
+              class="search navbar__search navbar__search-mobille--visible"
+            >
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Location"
+              />
+              <button class="search__button">
+                <img src="img/search.svg" alt="icon: search" />
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -83,7 +111,7 @@
         </ul>
       </div>
     </header>
-    <nav class="breadcrumb conteiner">
+    <nav class="breadcrumb breadcrumb--mobille conteiner">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
           <a href="$" class="breadcrumb-list__link">Home</a>

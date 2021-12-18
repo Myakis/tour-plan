@@ -87,6 +87,11 @@
   justify-content: space-between;
 
   &__item {
+    &--mobille {
+      &-visible {
+        display: none;
+      }
+    }
   }
 
   &__link {
@@ -100,4 +105,10 @@
       color: rgb(228, 121, 21);
     }
   }
+}
+.navbar__search-mobille--visible {
+  display: none;
+}
+.navbar__user-mobille--visible {
+  display: none;
 }
