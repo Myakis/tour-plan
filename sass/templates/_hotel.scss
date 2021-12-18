@@ -114,16 +114,16 @@
 
     &--prev {
       left: 18px;
-      height: 16px;
-      width: 16px;
-      background: url(/img/arrow-l.svg) no-repeat;
+      height: 20px;
+      width: 20px;
+      background: url(../img/arrow-l.svg) no-repeat;
       z-index: 6;
     }
     &--next {
       right: 18px;
-      height: 16px;
-      width: 16px;
-      background: url(/img/arrow.svg) no-repeat;
+      height: 20px;
+      width: 20px;
+      background: url(../img/arrow.svg) no-repeat;
       z-index: 6;
     }
   }
