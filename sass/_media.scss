@@ -215,6 +215,13 @@
       }
     }
   }
+  .form {
+    flex-wrap: wrap;
+    &__input {
+      flex: 0 0 100%;
+      margin-top: 20px;
+    }
+  }
   .social-network {
     grid-column: 1/2;
     grid-row: 2/3;

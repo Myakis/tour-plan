@@ -65,7 +65,7 @@
       left: 0;
       height: 100%;
       position: absolute;
-      background: url(/img/point-icon.svg) no-repeat;
+      background: url(../img/point-icon.svg) no-repeat;
     }
   }
 
@@ -78,7 +78,7 @@
       left: 0;
       height: 100%;
       position: absolute;
-      background: url(/img/phone-icon.svg) no-repeat;
+      background: url(../img/phone-icon.svg) no-repeat;
     }
   }
 
@@ -91,7 +91,7 @@
       left: 0;
       height: 100%;
       position: absolute;
-      background: url(/img/mail-icon.svg) no-repeat;
+      background: url(../img/mail-icon.svg) no-repeat;
     }
   }
 
@@ -144,6 +144,11 @@
     height: 50px;
     border: none;
     border-radius: 4px;
+    outline: none;
+    &:focus {
+      background: #92b6da;
+      opacity: 0.7;
+    }
   }
 
   &__area {
@@ -153,6 +158,11 @@
     margin: 20px 0;
     resize: none;
     height: 123px;
+    outline: none;
+    &:focus {
+      background: #92b6da;
+      opacity: 0.7;
+    }
   }
 
   &__button {
@@ -160,6 +170,12 @@
     background: $primary;
     padding: 18px 60px;
     border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: box-shadow 0.1s ease-out;
+    &:hover {
+      box-shadow: 0 0 10px $light;
+    }
   }
 
   &__text {

@@ -46,12 +46,17 @@ img {
 }
 .search__input {
   width: 350px;
-  background: #F5FAFE;
-  border: navajowhite;
+  background: #f5fafe;
+  outline: none;
+  border: none;
   height: 40px;
   font-size: 12px;
   color: #333;
   padding: 0 88px 0 23px;
+}
+.search__input:focus {
+  background: #69aef1;
+  opacity: 0.7;
 }
 .search__button {
   position: absolute;
@@ -69,6 +74,9 @@ img {
   align-items: center;
   text-decoration: none;
 }
+.user:hover .user-avatar {
+  transform: rotate(360deg);
+}
 .user__name {
   font-size: 14px;
   line-height: 18px;
@@ -81,6 +89,7 @@ img {
   width: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .navbar-bottom {
@@ -101,6 +110,10 @@ img {
   color: #fff;
   font-size: 14px;
   line-height: 18px;
+  transition: color 0.2s ease-in-out;
+}
+.navbar-menu__link:hover {
+  color: #e47915;
 }
 
 .breadcrumb-list {
@@ -341,6 +354,10 @@ img {
   color: #fff;
   cursor: pointer;
   margin-top: 17px;
+  transition: box-shadow 0.1s ease-out;
+}
+.booking__button:hover {
+  box-shadow: 0 0 10px #fff;
 }
 
 .map {
@@ -375,6 +392,10 @@ img {
   flex-direction: column;
   align-items: start;
   padding: 25px;
+  overflow: hidden;
+}
+.card:hover .card__img {
+  transform: scale(1.3);
 }
 .card::before {
   content: "";
@@ -393,6 +414,7 @@ img {
   z-index: -2;
   height: 100%;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 .card__text {
   font-style: normal;
@@ -408,6 +430,10 @@ img {
   border-radius: 4px;
   border: none;
   padding: 7px 21px;
+  transition: box-shadow 0.1s ease-out;
+}
+.card__button:hover {
+  box-shadow: 0 0 10px #fff;
 }
 
 .footer {
@@ -467,7 +493,7 @@ img {
   left: 0;
   height: 100%;
   position: absolute;
-  background: url(/img/point-icon.svg) no-repeat;
+  background: url(../img/point-icon.svg) no-repeat;
 }
 .footer__info-2 {
   position: relative;
@@ -479,7 +505,7 @@ img {
   left: 0;
   height: 100%;
   position: absolute;
-  background: url(/img/phone-icon.svg) no-repeat;
+  background: url(../img/phone-icon.svg) no-repeat;
 }
 .footer__info-3 {
   position: relative;
@@ -491,7 +517,7 @@ img {
   left: 0;
   height: 100%;
   position: absolute;
-  background: url(/img/mail-icon.svg) no-repeat;
+  background: url(../img/mail-icon.svg) no-repeat;
 }
 .footer__form {
   grid-row: 3/4;
@@ -543,6 +569,11 @@ img {
   height: 50px;
   border: none;
   border-radius: 4px;
+  outline: none;
+}
+.form__input:focus {
+  background: #92b6da;
+  opacity: 0.7;
 }
 .form__area {
   flex: 0 0 100%;
@@ -551,12 +582,23 @@ img {
   margin: 20px 0;
   resize: none;
   height: 123px;
+  outline: none;
+}
+.form__area:focus {
+  background: #92b6da;
+  opacity: 0.7;
 }
 .form__button {
   color: #fff;
   background: #ec1f46;
   padding: 18px 60px;
   border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: box-shadow 0.1s ease-out;
+}
+.form__button:hover {
+  box-shadow: 0 0 10px #fff;
 }
 .form__text {
   color: #bdbdbd;
@@ -775,6 +817,14 @@ img {
   }
   .footer-bottom__link {
     margin: 0 0 15px 0;
+  }
+
+  .form {
+    flex-wrap: wrap;
+  }
+  .form__input {
+    flex: 0 0 100%;
+    margin-top: 20px;
   }
 
   .social-network {
