@@ -442,6 +442,7 @@ img {
   border: none;
   padding: 7px 21px;
   transition: box-shadow 0.1s ease-out;
+  cursor: pointer;
 }
 .card__button:hover {
   box-shadow: 0 0 10px #fff;
@@ -613,6 +614,56 @@ img {
 }
 .form__text {
   color: #bdbdbd;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 143, 223, 0.39);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+}
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 478px;
+  color: #fff;
+  background: #0a223d;
+  padding: 33px 88px;
+  z-index: 21;
+  transition: opacity 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal__input {
+  flex: 0 0 100%;
+  margin-bottom: 25px;
+}
+.modal__input:last-child {
+  margin-top: 10px;
+}
+.modal__title {
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-align: center;
+}
+
+.button__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

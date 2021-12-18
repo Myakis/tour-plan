@@ -386,16 +386,19 @@
           <h2 class="footer__title">Send us a message</h2>
           <form action="#" class="form">
             <input
+              required
               type="text"
               placeholder=" Your Full Name*"
               class="form__input"
             />
             <input
+              required
               type="phone"
               placeholder="Phone Number*"
               class="form__input"
             />
             <textarea
+              required
               cols="30"
               rows="10"
               class="form__area"
@@ -417,6 +420,42 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <img src="img/close.png" class="button__close" alt="" />
+        <h2 class="modal__title">Send us a message</h2>
+        <form action="#" class="form">
+          <input
+            required
+            type="text"
+            placeholder=" Your Full Name*"
+            class="form__input modal__input"
+          />
+          <input
+            required
+            type="phone"
+            placeholder="Phone Number*"
+            class="form__input modal__input"
+          />
+          <input
+            required
+            type="email"
+            placeholder="E-mail*"
+            class="form__input modal__input"
+          />
+          <textarea
+            required
+            cols="30"
+            rows="10"
+            class="form__area"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="form__button">Send</button>
+          <span class="form__text">* Required Fields</span>
+        </form>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
