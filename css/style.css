@@ -742,6 +742,11 @@ img {
     max-width: 100%;
   }
 
+  .user__name {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
   .navbar__search-mobille--hiden, .navbar__user-mobille--hiden {
     display: none;
   }
@@ -751,6 +756,9 @@ img {
   }
   .navbar__search-mobille--visible span, .navbar__user-mobille--visible span {
     color: #fff;
+  }
+  .navbar__user {
+    flex-direction: column;
   }
   .navbar-bottom {
     display: none;
