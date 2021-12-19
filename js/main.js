@@ -16,10 +16,14 @@ const swiper = new Swiper(".swiper", {
 
 const menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", () => {
-  document
-    .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom--visible");
-  body.style.overflow = "hidden";
+  const mobileMenu = document.querySelector(".navbar-bottom");
+  mobileMenu.classList.toggle("navbar-bottom--visible");
+
+  if (mobileMenu.classList.contains("navbar-bottom--visible")) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "";
+  }
 });
 
 const bookingkBtn = document.querySelector(".booking__button");
@@ -46,6 +50,7 @@ bookingkBtn.addEventListener("click", () => {
 
 closeBtnModal.addEventListener("click", () => {
   modalStyles("0", "hidden");
+  body.style.overflow = "";
 });
 
 function modalStyles(opasity, visibility) {
