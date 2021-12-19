@@ -19,6 +19,7 @@ menuButton.addEventListener("click", () => {
   document
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom--visible");
+  body.style.overflow = "hidden";
 });
 
 const bookingkBtn = document.querySelector(".booking__button");
@@ -26,6 +27,7 @@ const modalOverlay = document.querySelector(".modal__overlay");
 const modalDiaglog = document.querySelector(".modal__dialog");
 const closeBtnModal = document.querySelector(".button__close");
 const cardBooks = document.querySelectorAll(".card__button");
+const body = document.querySelector("body");
 //Поиск
 const searchBtn = document.querySelector(".search__button");
 const searchValue = document.querySelector(".search__input");
@@ -51,6 +53,7 @@ function modalStyles(opasity, visibility) {
   modalOverlay.style.visibility = visibility;
   modalDiaglog.style.opacity = opasity;
   modalDiaglog.style.visibility = visibility;
+  body.style.overflow = "hidden";
 }
 //форма
 searchBtn.addEventListener("click", (event) => {
