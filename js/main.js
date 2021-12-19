@@ -15,6 +15,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 const menuButton = document.querySelector(".menu-button");
+
 menuButton.addEventListener("click", () => {
   const mobileMenu = document.querySelector(".navbar-bottom");
   mobileMenu.classList.toggle("navbar-bottom--visible");
@@ -25,8 +26,10 @@ menuButton.addEventListener("click", () => {
     body.style.overflow = "";
   }
 });
+//
 
 const bookingkBtn = document.querySelector(".booking__button");
+
 const modalOverlay = document.querySelector(".modal__overlay");
 const modalDiaglog = document.querySelector(".modal__dialog");
 const closeBtnModal = document.querySelector(".button__close");
