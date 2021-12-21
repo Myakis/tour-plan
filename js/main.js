@@ -15,18 +15,29 @@ const swiper = new Swiper(".swiper", {
 });
 
 const menuButton = document.querySelector(".menu-button");
-
+const widthWindow = window.outerWidth;
+const windowInnerWidth = window.innerWidth;
+let widthScrollBar = widthWindow - windowInnerWidth;
+const header = document.querySelector(".navbar--mobille_fixed");
 menuButton.addEventListener("click", () => {
   const mobileMenu = document.querySelector(".navbar-bottom");
   mobileMenu.classList.toggle("navbar-bottom--visible");
 
   if (mobileMenu.classList.contains("navbar-bottom--visible")) {
     body.style.overflow = "hidden";
+    body.style.paddingRight = `${widthScrollBar}px`;
+    header.style.paddingRight = `${widthScrollBar}px`;
   } else {
     body.style.overflow = "";
+    body.style.paddingRight = ``;
+    header.style.paddingRight = ``;
   }
 });
 //
+
+console.log(widthWindow);
+console.log(windowInnerWidth);
+console.log(widthScrollBar);
 
 const bookingkBtn = document.querySelector(".booking__button");
 
@@ -61,7 +72,6 @@ function modalStyles(opasity, visibility) {
   modalOverlay.style.visibility = visibility;
   modalDiaglog.style.opacity = opasity;
   modalDiaglog.style.visibility = visibility;
-  body.style.overflow = "hidden";
 }
 //форма
 searchBtn.addEventListener("click", (event) => {
