@@ -501,7 +501,7 @@ img {
 .subscribe-reviews {
   padding-top: 98px;
   padding-bottom: 87px;
-  background: url("../../img/subscribe-bg.jpg") center/cover no-repeat;
+  background: url("../img/subscribe-bg.jpg") center/cover no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -623,7 +623,7 @@ img {
 .article-reviews__item::after {
   content: "";
   position: absolute;
-  background: url("../../img/quete-left.svg") center/cover no-repeat;
+  background: url("../img/quete-left.svg") center/cover no-repeat;
   width: 70px;
   height: 50px;
   top: 5%;
@@ -637,7 +637,7 @@ img {
 .article-reviews__item::before {
   content: "";
   position: absolute;
-  background: url("../../img/quete-right.svg") center/cover no-repeat;
+  background: url("../img/quete-right.svg") center/cover no-repeat;
   width: 70px;
   height: 50px;
   top: 40%;
