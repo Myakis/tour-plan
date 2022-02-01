@@ -1,8 +1,14 @@
 .footer {
   padding: 91px 0 63px 0;
   background: $dark;
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
   &__logo {
     align-self: center;
+    @media (max-width: 768px) {
+      width: 100px;
+    }
   }
 
   &__block {
@@ -15,10 +21,16 @@
     font-size: 18px;
     text-transform: uppercase;
     line-height: 23px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__list {
     padding-left: 0;
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
 
   &__item {
@@ -32,6 +44,9 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 160%;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   &__links {
@@ -50,6 +65,10 @@
     color: $footer-color;
     margin-top: 34px;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin: 0;
+    }
   }
 
   &__info {
@@ -104,11 +123,22 @@
   margin-top: 102px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
   &__link {
     margin: auto;
-    width: 350px;
+    max-width: 350px;
+    gap: 5px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media (max-width: 567px) {
+      flex-direction: column;
+    }
   }
 }
 .footer-wrapper {
@@ -135,6 +165,7 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   margin-top: 34px;
@@ -148,6 +179,9 @@
     &:focus {
       background: #92b6da;
       opacity: 0.7;
+    }
+    @media (max-width: 768px) {
+      height: 35px;
     }
   }
 
@@ -163,12 +197,15 @@
       background: #92b6da;
       opacity: 0.7;
     }
+    @media (max-width: 768px) {
+      height: 100px;
+    }
   }
 
   &__button {
     color: $light;
     background: $primary;
-    padding: 18px 60px;
+    padding: 18px 66px;
     border-radius: 4px;
     outline: none;
     border: none;
@@ -176,9 +213,15 @@
     &:hover {
       box-shadow: 0 0 10px $light;
     }
+    @media (max-width: 768px) {
+      padding: 10px 60px;
+    }
   }
 
   &__text {
     color: $footer-color;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
