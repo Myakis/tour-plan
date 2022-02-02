@@ -708,7 +708,7 @@ img {
   top: 0;
   left: 0;
   position: absolute;
-  background: url("../../img/slide-arrow-l.svg") center no-repeat;
+  background: url("../img/slide-arrow-l.svg") center no-repeat;
 }
 .article-reviews__button-next {
   border: none;
@@ -746,7 +746,7 @@ img {
   height: 100%;
   position: absolute;
   top: 0;
-  background: url("../../img/slide-arrow-r.svg") center no-repeat;
+  background: url("../img/slide-arrow-r.svg") center no-repeat;
 }
 
 .item-reviews__name {
